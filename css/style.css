@@ -1,0 +1,88 @@
+.tanggal {
+  color: blue;
+}
+
+* {
+  color: #181515;
+}
+
+h1,
+h2 {
+  color: green;
+}
+
+div > h1#title {
+  color: pink;
+}
+
+div + p {
+  color: red;
+}
+
+a:active {
+  color: red;
+}
+
+input:focus {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+p.isiNama::first-letter {
+  color: red;
+}
+
+.title-wrapper {
+  border-width: 2px;
+  border: solid blue;
+}
+
+.description-wrapper {
+  border-width: 2px;
+  border: dashed red;
+  padding: 0 80px 0 80px;
+  text-align: justify;
+  position: absolute;
+  top: -20px;
+}
+
+.description-container {
+  border-width: 2px;
+  border: solid green;
+  position: relative;
+}
+
+.sticky-wrapper {
+  border-width: 2px;
+  border: solid red;
+  position: sticky;
+  top: 0;
+}
+
+.img-container {
+  border-width: 2px;
+  border: solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.img-card {
+  border-width: 2px;
+  border: solid blue;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .img-container {
+    flex-direction: column;
+  }
+}
